@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('tropicalTreasures.game')
     .value('advanceReel', advanceReel);
 
 function advanceReel (reel) {
