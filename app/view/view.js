@@ -4,22 +4,20 @@ var viewModule = angular.module('tropicalTreasures.view', [
     'tropicalTreasures.game'
 ])
     .controller('viewController', function($scope, createReel, advanceReel, getLine, scoreLine) {
+        $scope.showPays = false;
         $scope.reels = [];
         $scope.lastScore = 0;
         $scope.lastScoreType = "";
         $scope.activeLine = "";
         $scope.spinning = false;
-      var reel1Freq = [1, 3, 2, 3, 5, 7, 7, 8, 9, 3, 13, 3],
-          reel2Freq = [1, 1, 1, 2, 2, 3, 3, 8, 9, 14, 16, 4],
-          reel3Freq = [1, 1, 1, 2, 2, 3, 3, 5, 6, 12, 26, 2];
-          $scope.reels.push(createReel(reel1Freq));
-          $scope.reels.push(createReel(reel2Freq));
-          $scope.reels.push(createReel(reel3Freq));
+
+        generateReels();
 
       $scope.spin = function (line) {
         if ($scope.spinning) {
           return;
         }
+        generateReels();
         $scope.activeLine = line;
         $scope.spinning = true;
         playAudio("spinning");
@@ -67,6 +65,16 @@ var viewModule = angular.module('tropicalTreasures.view', [
           }
           $scope.$apply();
         }, 2395);
+      };
+      function generateReels(){
+        var reel1Freq = [1, 3, 2, 3, 5, 7, 7, 8, 9, 3, 13, 3],
+            reel2Freq = [1, 1, 1, 2, 2, 3, 3, 8, 9, 14, 16, 4],
+            reel3Freq = [1, 1, 1, 2, 2, 3, 3, 5, 6, 12, 26, 2];
+        var newReels = [];
+        newReels.push(createReel(reel1Freq));
+        newReels.push(createReel(reel2Freq));
+        newReels.push(createReel(reel3Freq));
+        $scope.reels = newReels;
       }
     });
 
