@@ -2,6 +2,12 @@ body {
   background-color: dodgerblue;
 }
 
+h3 {
+  color: white;
+  font-size: 3vh;
+  margin: 0;
+}
+
 div#title-image {
   width: 100vw;
   margin: 0 auto;
@@ -100,12 +106,36 @@ div#score {
   bottom: 9vh;
 }
 
-div#score h3 {
-  color: white;
-  opacity: 1;
-  font-size: 3vh;
-  margin: 0;
+div#pays {
+  background-color: black;
+  opacity: 0.9;
+  position: fixed;
+  left: 21vw;
+  bottom: 17vh;
 }
+
+div#pays table {
+  width: 60vw;
+}
+
+div#pays img {
+  height: 4vw;
+  width: 4vw;
+}
+
+div#paysButtonWrapper {
+  position: absolute;
+  display: inline;
+  left: 69vw;
+  bottom: 17vh;
+  opacity: 0.7;
+}
+
+div#pays h3 {
+  display: inline;
+  padding: 2%;
+}
+
 
 audio {
   display: none;

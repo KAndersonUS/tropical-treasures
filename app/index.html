@@ -37,16 +37,168 @@
             <h3>{{lastScoreType}}  Won: {{lastScore}}</h3>
         </div>
     </div>
+    <div id="paysButtonWrapper">
+        <button ng-click="showPays=!showPays">Pays</button>
+    </div>
+
+    <div id="pays" ng-show="showPays" ng-click="showPays=!showPays">
+        <h3>All pays left to right</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/0.png"/>
+                        <img src="img/0.png"/>
+                        <img src="img/0.png"/>
+                    </td>
+                    <td>
+                        <h3>60</h3>
+                    </td>
+                    <td>
+                        <img src="img/1.png"/>
+                        <img src="img/1.png"/>
+                        <img src="img/1.png"/>
+                    </td>
+                    <td>
+                        <h3>55</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/2.png"/>
+                        <img src="img/2.png"/>
+                        <img src="img/2.png"/>
+                    </td>
+                    <td>
+                        <h3>50</h3>
+                    </td>
+                    <td>
+                        <img src="img/3.png"/>
+                        <img src="img/3.png"/>
+                        <img src="img/3.png"/>
+                    </td>
+                    <td>
+                        <h3>45</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/4.png"/>
+                        <img src="img/4.png"/>
+                        <img src="img/4.png"/>
+                    </td>
+                    <td>
+                        <h3>40</h3>
+                    </td>
+                    <td>
+                        <img src="img/5.png"/>
+                        <img src="img/5.png"/>
+                        <img src="img/5.png"/>
+                    </td>
+                    <td>
+                        <h3>35</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/6.png"/>
+                        <img src="img/6.png"/>
+                        <img src="img/6.png"/>
+                    </td>
+                    <td>
+                        <h3>30</h3>
+                    </td>
+                    <td>
+                        <img src="img/7.png"/>
+                        <img src="img/7.png"/>
+                        <img src="img/7.png"/>
+                    </td>
+                    <td>
+                        <h3>25</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/8.png"/>
+                        <img src="img/8.png"/>
+                        <img src="img/8.png"/>
+                    </td>
+                    <td>
+                        <h3>20</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/9.png"/>
+                        <img src="img/9.png"/>
+                        <img src="img/9.png"/>
+                    </td>
+                    <td>
+                        <h3>15</h3>
+                    </td>
+                    <td>
+                        <img src="img/9.png"/>
+                        <img src="img/9.png"/>
+                        <h3>ANY</h3>
+                    </td>
+                    <td>
+                        <h3>10</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/9.png"/>
+                        <h3>ANY</h3>
+                        <h3>ANY</h3>
+                    </td>
+                    <td>
+                        <h3>5</h3>
+                    </td>
+                    <td>
+                        <img src="img/10.png"/>
+                        <img src="img/10.png"/>
+                        <img src="img/10.png"/>
+                    </td>
+                    <td>
+                        <h3>3</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="img/10.png"/>
+                        <img src="img/10.png"/>
+                        <h3>ANY</h3>
+                    </td>
+                    <td>
+                        <h3>2</h3>
+                    </td>
+                    <td>
+                        <img src="img/10.png"/>
+                        <h3>ANY</h3>
+                        <h3>ANY</h3>
+                    </td>
+                    <td>
+                        <h3>1</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <!-- Audio assets -->
     <audio id="spinning" src="audio/spinning.mp3"></audio>
     <audio id="payoff" src="audio/payoff.mp3"></audio>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <!--<script src="bower_components/angular/angular.js"></script>-->
+  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
   <script src="app.js"></script>
   <script src="view/view.js"></script>
   <script src="components/game/module.js"></script>
