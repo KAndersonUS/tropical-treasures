@@ -1,7 +1,3 @@
-angular.module('tropicalTreasures.game')
-    .value('scoreLine', scoreLine)
-    .value('getLine', getLine);
-
 function scoreLine (symbols) {
     // line number is 0-based
     /* 3-of-a-kind

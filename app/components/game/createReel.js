@@ -1,7 +1,3 @@
-// TODO: game module
-angular.module('tropicalTreasures.game')
-    .value('createReel', createReel);
-
 function createReel (freq) {
     var reel = [];
     for (var i=0; i<freq.length; i++) {
