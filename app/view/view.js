@@ -67,9 +67,9 @@ var viewModule = angular.module('tropicalTreasures.view', [
         }, 2395);
       };
       function generateReels(){
-        var reel1Freq = [1, 3, 2, 3, 5, 7, 7, 8, 9, 3, 13, 3],
+        var reel1Freq = [1, 2, 2, 2, 3, 4, 5, 6, 7, 10, 16, 6],
             reel2Freq = [1, 1, 1, 2, 2, 3, 3, 8, 9, 14, 16, 4],
-            reel3Freq = [1, 1, 1, 2, 2, 3, 3, 5, 6, 12, 26, 2];
+            reel3Freq = [1, 1, 2, 2, 3, 3, 4, 7, 8, 14, 16, 3];
         var newReels = [];
         newReels.push(createReel(reel1Freq));
         newReels.push(createReel(reel2Freq));
